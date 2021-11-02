@@ -42,7 +42,7 @@ button {
 
 .blk-1,
 .blk-2 {
-	flex: 0 0 30%;
+	max-width: 40%;
 	margin: 2em;
 }
 
@@ -51,7 +51,7 @@ img {
 }
 
 .logo {
-	font-size: 24px;
+	font-size: 3em;
 }
 
 .header {
@@ -186,3 +186,52 @@ a {
 	background-color: #020202;
 	color: #f9faf8;
 }
+
+
+@media (max-width: 1180px) {
+
+	
+	.header{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.blk-1,.blk-2 {
+		margin: 1em;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.blk-1 {
+		max-width: 80%;
+	}
+
+	li {
+		display: block;
+		margin: 0.5em;
+		font-size: 2.5em;
+	}
+
+	.content {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.cards {
+		flex-wrap: wrap;
+	}
+	.card {
+		flex-basis: auto;
+	}
+
+	.blu {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	button {
+		flex: 1;
+	}
+
+	
+}
+
